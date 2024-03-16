@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Documentación de Administración Clientes API</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <img src="https://repositorio.tecnologicopichincha.edu.ec/retrieve/5fab9cad-0671-4b25-a148-32bb286ea723"
+                alt="">
+            <input type="checkbox" id="btnMenu">
+            <label for="btnMenu"><i class='bx bx-menu'></i></label>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Documentación</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Sections -->
+    <main class="main">
+        <section class="home" id="home">
+            <article class="text">
+                <h4>Administración de Clientes</h4>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam ea obcaecati quis provident eos, molestias repudiandae eaque, ipsum quaerat, a minus tempore. Ad magni voluptates eius rerum voluptas mollitia nesciunt.
+                </p>
+
+                <div class="buttons">
+                    <button>View Github</button>
+                    <button>View Demo</button>
+                </div>
+            </article>
+            <article class="figure">
+                <img src="https://miro.medium.com/v2/resize:fit:590/1*hUkKePegeZBlPASrKAHvKQ.png" alt="">
+            </article>
+        </section>
+
+        <section class="about" id="about">
+            <article class="text">
+                <h4>Get Access Token</h4>
+                <p>
+                    Para obtener el token de los usuarios debera iniciar sessión a través de la 
+                    siguiente ruta e ingresar los siguientes parametros: 
+                </p>
+                <br>
+                <div class="api">
+                    <pre>[POST]  http://192.168.214.128:4000/login</pre>
+                </div>
+                <code class="json">
+                    {
+                        "email" : "user1@example.com",
+                        "password": "password1"
+                    }
+                </code>
+                <code class="json">
+                        {
+                            "data": {
+                                "username": "user1",
+                                "cover": "cover1.jpg",
+                                "birthday": "1990-01-01T00:00:00.000Z",
+                                "dni": "123456789A"
+                            },
+                            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
+                            eyJ1c2VybmFtZSI6InVzZXIxIiwiY292ZXIiOiJjb3ZlcjEuanBnIiwiYmlydGhkYXki
+                            OiIxOTkwLTAxLTAxVDAwOjAwOjAwLjAwMFoiLCJkbmkiOiIxMjM0NTY3ODlBIiwiaWF0Ijox
+                            NzEwNjE0MzkxLCJleHAiOjE3MTA2MTQzOTJ9
+                            .klxodOykq0upHtWbuvf2NmLck7MUBFo6ZZFQzdTgjNU"
+                        }
+                </code>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+</body>
+</html>
